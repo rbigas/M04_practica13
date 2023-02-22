@@ -1,0 +1,28 @@
+from book import book
+from user import user
+from university import university
+
+l1 = book("El Juego de Ender", "Orson Scott Card", "Ediciones B", "1985", "Español", "10.99€")
+l2 = book("The Great Gatsby", "F.Scott Fitzgerald", "Scribner", "1925", "Ingles", "9.99€")
+book.info(l1)
+l1.setPrecio("11.99€")
+book.info(l1)
+book.info(l2)
+l2.setPrecio("10.99€")
+book.info(l2)
+user1 = user("Sara", "Jones", "27", "sarah.jones@gmail.com", "Femenino", "Estados Unidos")
+user2 = user("Juan", "Perez", "32", "juan.perez@gmail.com", "Masculino", "Mexico")
+user.salutacio(user1)
+user1.setCorreo("sarah.jones@hotmail.com")
+user.salutacio(user1)
+user.salutacio(user2)
+user2.setEdad("30")
+user.salutacio(user2)
+uni1 = university("Universidad Nacional de Ciencias Aplicadas", "Av. Universitaria 1801, Lima, Perú", "+51 1 748-0888", "informes@unca.edu", "https://www.unca.edu.pe/", "15/5/1950")
+uni2 = university("Universidad de las Américas", "Av. de los Cerezos s/n, San Andrés Cholula, Puebla, México", "+52 222 229 2000", "info@udla.mx", "https://www.udla.mx/", "1/9/1960")
+university.info(uni1)
+uni1.setNumTelef("+51 1 700-0909")
+university.info(uni1)
+university.info(uni2)
+uni2.setCorreo("informacion@udla.mx")
+university.info(uni2)
